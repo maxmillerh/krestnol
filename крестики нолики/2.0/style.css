@@ -1,0 +1,86 @@
+:root {
+	--blue: #163682;
+}
+
+body {
+	/* 	background-color: rgb(203, 231, 246); */
+	background-image: url(img/WhiteDryEraseGrid_Bathroom_NoLabel.png);
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	margin-top: 26px;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 150px;
+	width: 450px;
+	margin: 60px auto;
+
+	border: solid var(--blue) 4px;
+}
+
+.btn {
+	background-color: rgb(203, 231, 246, 0);
+	font-size: 100px;
+	font-weight: 300;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	cursor: pointer;
+	color: var(--blue);
+	border: solid 4px var(--blue);
+	padding: 0;
+}
+
+.cRed {
+	color: brown;
+}
+
+.modal {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 180px;
+	text-align: center;
+	background-color: white;
+	width: 500px;
+	height: 300px;
+	z-index: 2;
+	box-shadow: 0 0 8px 2px #c5c5c5;
+}
+
+.d-none{
+	display: none;
+}
+
+.user{
+	border-radius: 10px 0px 0px 10px;
+}
+
+.btn-active{
+	background-color: var(--blue);
+	color: white;
+	transform: scale(1.08);
+}
+
+.bot{
+	border-radius: 0px 10px 10px 0px;
+}
+
+header button{
+	padding: 6px 10px;
+	background-color: white;
+	border: solid 3px var(--blue);
+	border-radius: 10px 0px 0px 10px;
+	color: var(--blue);
+	font-weight: 600;
+	cursor: pointer;
+}
